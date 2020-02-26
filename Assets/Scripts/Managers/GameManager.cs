@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
         }
 
         m_TimerText.gameObject.SetActive(false);
-        m_MessageText.text = "Get Ready";
+        m_MessageText.text = "Destroy 12 Tanks to win";
     }
     void Update()
     {
@@ -72,11 +72,11 @@ public class GameManager : MonoBehaviour
                     m_TimerText.gameObject.SetActive(false);
                     if (IsPlayerDead() == true)
                     {
-                        m_MessageText.text = "TRY AGAIN";
+                        m_MessageText.text = "You Lost";
                     }
                     else
                     {
-                        m_MessageText.text = "WINNER!";
+                        m_MessageText.text = "Congratulations";
                     }
                 }
                 break;
